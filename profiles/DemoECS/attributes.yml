@@ -1,0 +1,46 @@
+vpc_id: 'vpc-08a75c15b9d6a142c'
+  
+vpc_cidr: '10.0.0.0/16'
+
+allow_all_cidr: '0.0.0.0/0'
+  
+aws_elb_name: 'sonarqube-elb'
+
+sonarqube_rds:
+  aws_rds_db_identifier: "rdssonarqube"
+  aws_rds_db_name: "rdssonarqube"
+  aws_rds_db_engine: "postgres"
+  aws_rds_db_engine_version: "9.6.11"
+  aws_rds_db_storage_type: "gp2"
+  aws_rds_db_master_user: "sonarqube"
+  aws_rds_storage_size: "40"
+  aws_rds_instance_class: "db.t2.small"
+
+subnets_list:
+  subnet-036fdba0cc5c5551a:
+    subnet_cidr: "10.0.101.0/24"
+    subnet_az: "ap-southeast-2b"
+  subnet-03945e44af686bdea:
+    subnet_cidr: "10.0.52.0/24"
+    subnet_az: "ap-southeast-2c"
+  subnet-0754b456e9dea8deb:
+    subnet_cidr: "10.0.50.0/24"
+    subnet_az: "ap-southeast-2a"
+  subnet-07937a1334c37c110:
+    subnet_cidr: "10.0.51.0/24"
+    subnet_az: "ap-southeast-2b"
+  subnet-08f6f7c80f098b0ce:
+    subnet_cidr: "10.0.2.0/24"
+    subnet_az: "ap-southeast-2c"
+  subnet-097b5e8a9d7627f16:
+    subnet_cidr: "10.0.1.0/24"
+    subnet_az: "ap-southeast-2b"
+  subnet-0b5804eebe27666a1:
+    subnet_cidr: "10.0.100.0/24"
+    subnet_az: "ap-southeast-2a"
+  subnet-0c118290fd3cceae6:
+    subnet_cidr: "10.0.0.0/24"
+    subnet_az: "ap-southeast-2a"
+  subnet-0eafab5e4ba9a05b7:
+    subnet_cidr: "10.0.102.0/24"
+    subnet_az: "ap-southeast-2c"

@@ -1,0 +1,16 @@
+---
+name: DemoECS
+title: DemoECS
+maintainer: Akila Amarathunga
+copyright: Akila
+copyright_email: akilada@gmail.com
+license: Apache-2.0
+summary: An InSpec Compliance Profile
+version: 0.1.0
+description: Terraform Demo ECS Inspec Profile
+inspec_version: "~> 4.16"
+supports:
+  - platform: aws
+depends:
+  - name: aws
+    git: https://github.com/inspec/inspec-aws.git
