@@ -4,7 +4,7 @@
 
 Inspec from for terraform-aws-ecs environment.  
 
-Blog URL - 
+Blog URL - https://platform.deloitte.com.au/articles/test-audit-infrastructure-with-inspec
 
 Prerequisites 
 ---
